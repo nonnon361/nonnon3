@@ -4,3 +4,13 @@ const notes = document.getElementById("notes");
 button.addEventListener("click", () => {
   console.log("clicked");
 });
+button.addEventListener("click", () => {
+  if (input.value === "") return;
+
+  const div = document.createElement("div");
+  div.textContent = input.value;
+
+  notes.appendChild(div);
+
+  input.value = "";
+});
