@@ -24,3 +24,4 @@ localStorage.setItem("notes", notes.innerHTML);
 window.onload = () => {
   notes.innerHTML = localStorage.getItem("notes") || "";
 };
+const search = document.getElementById("search");
