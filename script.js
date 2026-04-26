@@ -26,5 +26,11 @@ window.onload = () => {
 };
 const search = document.getElementById("search");
 search.addEventListener("input", () => {
-  console.log(search.value);
+  document.querySelectorAll("#notes div").forEach(note => {
+    if (note.textContent.includes(search.value)) {
+      note.style.display = "block";
+    } else {
+      note.style.display = "none";
+    }
+  });
 });
