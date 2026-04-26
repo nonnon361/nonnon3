@@ -18,3 +18,5 @@ button.addEventListener("click", () => {
   input.value = "";
 });
 const category = document.getElementById("category");
+const color = document.getElementById("color");
+div.style.background = color.value;
