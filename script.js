@@ -17,3 +17,4 @@ button.addEventListener("click", () => {
 
   input.value = "";
 });
+const category = document.getElementById("category");
