@@ -8,7 +8,7 @@ button.addEventListener("click", () => {
   if (input.value === "") return;
 
   const div = document.createElement("div");
-  div.textContent = input.value;
+  div.textContent = input.value + " (" + category.value + ")";
   div.addEventListener("click", () => {
   div.remove();
 });
