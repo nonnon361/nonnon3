@@ -27,7 +27,7 @@ window.onload = () => {
 const search = document.getElementById("search");
 search.addEventListener("input", () => {
   document.querySelectorAll("#notes div").forEach(note => {
-    if (note.textContent.includes(search.value)) {
+    if (note.textContent.toLowerCase().includes(search.value.toLowerCase()))
       note.style.display = "block";
     } else {
       note.style.display = "none";
