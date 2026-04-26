@@ -9,7 +9,12 @@ button.addEventListener("click", () => {
 
   const div = document.createElement("div");
   div.textContent = input.value + " (" + category.value + ")";
-  div.addEventListener("click", () => {
+  div.addEventListener("dblclick", () => {
+  const newText = prompt("Edit note:", div.textContent);
+  if (newText) {
+    div.textContent = newText;
+  }
+});
   div.remove();
 });
 
