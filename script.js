@@ -21,3 +21,6 @@ const category = document.getElementById("category");
 const color = document.getElementById("color");
 div.style.background = color.value;
 localStorage.setItem("notes", notes.innerHTML);
+window.onload = () => {
+  notes.innerHTML = localStorage.getItem("notes") || "";
+};
