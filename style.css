@@ -14,3 +14,10 @@ div:hover {
 div {
   cursor: pointer;
 }
+h1 {
+  margin-bottom: 10px;
+}
+
+input, select, button {
+  margin-top: 5px;
+}
