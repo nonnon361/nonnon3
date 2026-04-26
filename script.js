@@ -25,3 +25,6 @@ window.onload = () => {
   notes.innerHTML = localStorage.getItem("notes") || "";
 };
 const search = document.getElementById("search");
+search.addEventListener("input", () => {
+  console.log(search.value);
+});
