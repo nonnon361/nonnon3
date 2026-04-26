@@ -9,6 +9,9 @@ button.addEventListener("click", () => {
 
   const div = document.createElement("div");
   div.textContent = input.value;
+  div.addEventListener("click", () => {
+  div.remove();
+});
 
   notes.appendChild(div);
 
