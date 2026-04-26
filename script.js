@@ -39,3 +39,4 @@ search.addEventListener("input", () => {
     }
   });
 });
+localStorage.setItem("notes", notes.innerHTML);
